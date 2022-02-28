@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <table id="board">
+          <tr>
+            <td id="first-cell"></td>
+            <td id="second-cell"></td>
+            <td id="third-cell"></td>
+          </tr>
+          <tr>
+            <td id="fourth-cell"></td>
+            <td id="fifth-cell"></td>
+            <td id="sixth-cell"></td>
+          </tr>
+          <tr>
+            <td id="seventh-cell"></td>
+            <td id="eighth-cell"></td>
+            <td id="ninth-cell"></td>
+          </tr>
+          <tr>
+            <td colspan="1.5" id="button-cell">
+              <button id="new-game" class="last-row">New Game</button>
+            </td>
+            <td colspan="2" id="button-cell">
+              <select name="game-mode" id="game-mode" class="last-row">
+                <option value="pass-and-play" selected>Pass & Play</option>
+                <option value="play-with-cpu">Play with CPU</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <p id="won"></p>
+      </div>
+    </div>
+    <script src="Script/script.js"></script>
+  </body>
+</html>
